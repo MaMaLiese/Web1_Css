@@ -1,0 +1,55 @@
+body {
+    display:grid;
+    font-family:verdana;
+   grid-template-columns: 256px auto 196px;
+   grid-template-rows: auto auto auto;
+   grid-template-areas:"header header header"
+   "nav main aside"
+   "footer footer footer";
+    
+}
+
+
+header {
+    background-color: pink;
+    grid-area:header;
+    padding:10px;
+   
+    
+}
+
+nav {
+    background-color: azure;
+    grid-area:nav;
+    padding:10px;
+    
+ 
+    
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    background-color: darkseagreen;
+    grid-area:main;
+    padding:10px;
+    
+    
+}
+
+aside {
+    background-color: bisque;
+    grid-area:aside;
+    padding:10px;
+    
+}
+
+footer {
+    background-color: pink;
+    grid-area:footer;
+    padding:10px;
+  
+}
