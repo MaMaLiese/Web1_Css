@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+   <html>
+     <head>
+       <style>
+        body { min-height: 100vh; }
+         .container {
+            min-height: 100vh;
+           display: grid;
+           grid-template-columns:60% 30% ;
+           grid-template-rows:10% 70% 20%;
+           grid-template-areas: "header aside"
+           "article aside"
+           "footer footer";
+           
+           
+           justify-content: space-evenly;
+           align-content: space-between;
+           color: #f6f3f3;
+           font-family: sans-serif;
+           font-weight: 400;
+           padding: 10px;
+
+         }
+         header {
+           background-color: #b53d2c;
+           grid-area:header;
+         }
+         article {
+           background-color: #f8ab0b;
+           grid-area:article;
+         }
+         aside {
+           background-color: #57d6cc;
+           grid-area:aside;
+         }
+         footer {
+           background-color: #10518c;
+           grid-area:footer;
+         }
+       </style>
+     </head>
+     <body>
+       <div class="container">
+         <header>Header</header>
+         <article>Article</article>
+         <aside>Aside</aside>
+         <footer>Footer</footer>
+       </div>
+     </body>
+   </html>
