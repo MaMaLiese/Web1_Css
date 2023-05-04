@@ -8,38 +8,86 @@ body {
 
 }
 
-
 .wrapper {
     
     display: grid;
     grid-template-columns: 10% auto 10%;
     grid-template-rows: auto auto auto;
+    grid-column-gap: 0.5em;
     grid-template-areas: 
     
-    "menulist main sidebar";
-    
-   
-
+    "menubar main sidebar";
 }
 #top {
+    /*abstand zwischen h1 und p ist noch zu lösen*/
+    margin-bottom:0.8em;
+
+    padding-top:0.2em;
+    padding-bottom:0.2em;
     background-color: rgb(86, 192, 86);
-    border-radius: 0.5em
+    border-radius: 0.3em;
+    padding-left:1.6em;
+    padding-right:1.6em;
+    color: white;
+    
+}
+/* nur um besser zu sehen: */
+/* h1 {border-style: solid;}
+p{border-style:solid;} */
+
+
+/*gesamte menubar in align mit sidebar ist noch zu lösen*/
+#menubar{
+    
+    padding-top:0em;
+
+    border-style: solid;
+    /* border-color: rgb(200, 0, 255); */
 }
 
-.menuitem{
-   
+#menulist{
+    border-style: solid;
+    /* border-color: blue; */
+    display: grid;
+    padding-left:0em
+}
+#menulist :hover {
+    color: white;
+    font-weight:bolder;
+    background-color: rgb(86, 192, 86);
+    padding-left:0em;
+       
+}
+.menuitem {
     
     list-style-type: none;
     display: grid;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
+    padding-left:0.2em;
     background-color: rgb(241, 237, 222);
-    border-radius: 0.3em
-
+    border-style: solid;
+    border-color: rgb(161, 160, 157);
+    border-width:0.05em;    
+    border-radius: 0.3em;
 }
+  
 
 #sidebar{
     background-color: rgb(64, 150, 231);
-    border-radius: 0.5em
+    color: white;
+    border-radius: 0.3em;
+    padding-left:0.2em;
+}
+
+#bottom {
+    margin-top: 0.8em;
+    background-color: rgb(241, 237, 222);
+    text-align:center;
+    border-style: solid;
+    border-color: rgb(161, 160, 157);
+    border-width: 0.05em;
+    border-radius: 0.3em;
+    font-size:x-small
 }
 /* #top {
     grid-area: top;
