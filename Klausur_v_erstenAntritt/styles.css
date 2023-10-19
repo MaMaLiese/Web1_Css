@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+#header {
+  padding: 1em;
+}
+
+#navigation {
+  width: 200px;
+  min-width: 200px;
+}
+
+#main {
+  width: calc(100% - 200px);
+}
+
+#articels > div {
+  width: 200px;
+  height: 350px;
+}
+
+#footer {
+  margin-bottom: 4rem;
+}
+
+section#cookieblock {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  line-height: 2rem;
+  background-color: darkgray;
+}
+
+section#cookieblock button {
+  margin: 0 2rem;
+  padding: .5rem;
+}
